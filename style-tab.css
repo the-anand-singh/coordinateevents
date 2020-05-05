@@ -1,0 +1,153 @@
+/* CSS Document */
+/* Adding Responsiveness - For Tab */
+@media only screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {}
+  header {}
+  figure {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 2vw 0;
+  }
+  figure img {}
+  nav {
+    float: none;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-content: center;
+  }
+  ul {
+    margin: auto;
+  }
+  li {
+    margin: auto;
+    text-align: center;
+    padding: 0 5px 0 0;
+  }
+  a.menu {}
+  a.menu:hover {}
+  .placeholder {}
+  .hero {
+    height: 1050px;
+    max-width: 100%;
+  }
+  .hero img {}
+  .desc {
+    letter-spacing: .045em;
+    font-size: 1em;
+  }
+  .gallery {}
+  .gallery-col-main {}
+  .gallery-col-side {}
+  .gallery-col-side-1 {}
+  .gallery-col-side-2 {}
+  .gallery-col-side-3 {}
+  .gallery-col-main img, .gallery-col-side-1 img, .gallery-col-side-2 img, .gallery-col-side-3 img {}
+  .overlay {}
+  .modal {}
+  .modal-box {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32.5vw;
+  }
+  .modal-box-left, .modal-box-right {
+  }
+  .modal-box-center {
+    width: 100%;
+  }
+  .close {}
+  .modal-box img {
+    height: 100%;
+    max-width: 100%;
+  }
+  .prev-gallery, .next-gallery {
+    padding: 3vw 8%;
+    margin: 25vw 37%;
+  }
+  .services {
+    padding: 0 5vw 2vw;
+  }
+  .heading {}
+  .row {}
+  .column {
+    width: 47.92%;
+    height: 25vw;
+    padding-left: 0;
+    padding-right: 0.4em;
+    margin: 2px;
+  }
+  .column:hover {}
+  .row::after {}
+  h4 {}
+  .column > p {
+    text-align: left;
+  }
+  .column > p > a {}
+  .column .fas {
+    padding: 0em 0.25em 3.5em;
+  }
+  .testimonial {}
+  .testimonial-left, .testimonial-right {}
+  .testimonial-center {}
+  .testimonial .dot {}
+  .prev-testimonials, .next-testimonials {}
+  .prev-gallery:hover, .next-gallery:hover, .prev-testimonials:hover, .next-testimonials:hover {}
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw 10vw;
+  }
+  .contact-left {
+    float: none;
+    width: 100%;
+  }
+  .contact-left iframe {
+    height: 35vw;
+  }
+  .contact-left > p > a {}
+  .contact-right {
+    float: none;
+    width: 100%;
+    padding-top: 3vw;
+  }
+  .contact-right > p {}
+  .col-25 {}
+  .col-75 {}
+  input[type=text], [type=email], [type=tel], textarea {}
+  label {}
+  input[type=submit] {}
+  input[type=submit]:hover {}
+  .social {
+    margin: auto;
+    display: flex;
+    align-content: center;
+    padding: 5vw 8vw 0;
+  }
+  .social > a {
+    margin: auto;
+  }
+  .fa, .fab {}
+  .fa-instagram, .fa-facebook-f, .fa-envelope, .fa-phone-alt, .fa-youtube {}
+  .fa-instagram:hover, .fa-facebook-f:hover, .fa-envelope:hover, .fa-phone-alt:hover, .fa-youtube:hover {}
+  .contact::after {}
+  p.back-up {}
+  .far {
+    margin-right: 35px;
+  }
+  .fa-hand-point-up {}
+  .fa-hand-point-up:hover {}
+  footer {}
+  .credit {}
+  .credit .label {
+    margin-left: 35%;
+  }
+  .credit a {
+    margin-right: 20%;
+  }
+}

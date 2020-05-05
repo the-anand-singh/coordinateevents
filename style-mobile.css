@@ -1,0 +1,150 @@
+/* CSS Document */
+/* Adding Responsiveness - For Phone */
+@media only screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  header {
+    position: relative;
+    max-width: 100%;
+  }
+  figure {
+    float: left;
+    width: 100%;
+    background-color: #2A1B3D;
+    margin: auto;
+    padding: 2vw;
+  }
+  figure img {}
+  nav {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    float: left;
+    display: none;
+  }
+  ul {
+    margin: auto;
+  }
+  li {
+    margin: auto;
+    text-align: center;
+    padding: 0 5 0 0;
+  }
+  ul li {
+    float: none;
+    text-align: center;
+  }
+  ul > li > a {
+    text-align: center;
+    padding: 0;
+  }
+  a.menu {}
+  a.menu:hover {}
+  .placeholder {}
+  .hero {
+    height: 110vw;
+    width: 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: contain;
+    box-sizing: border-box;
+  }
+  .hero img {}
+  .desc {
+    letter-spacing: .02em;
+    font-size: 1em;
+    text-align: center;
+  }
+  .gallery {
+    margin: auto;
+  }
+  .gallery-col-main {}
+  .gallery-col-side {}
+  .gallery-col-side-1 {}
+  .gallery-col-side-2 {}
+  .gallery-col-side-3 {}
+  .gallery-col-main img, .gallery-col-side-1 img, .gallery-col-side-2 img, .gallery-col-side-3 img {}
+  .overlay {}
+  .modal {
+    overflow-x: hidden;
+	  max-width: 100%;
+  }
+  .modal-box {
+    height: 90vw;
+    overflow-x: hidden;
+  }
+  .modal-box-left, .modal-box-right {}
+  .modal-box-center {}
+  .close {}
+  .modal-box img {}
+  .prev-gallery, .next-gallery {
+    padding: 3vw 2vw;
+    margin: 37.5vw 25%;
+  }
+  .services {}
+  .heading {}
+  .row {}
+  .column {
+    height: auto;
+    width: 100%;
+    box-sizing: content-box;
+    padding-bottom: 0.5vw;
+    margin: 0;
+  }
+  .column:hover {}
+  .row::after {}
+  h4 {}
+  .column > p {}
+  .column > p > a {}
+  .column .fas {
+    padding-bottom: 20vw;
+  }
+  .testimonial {}
+  .testimonial-left, .testimonial-right {}
+  .testimonial-center {
+    height: 50vw;
+  }
+  .testimonial .dot {}
+  .prev-testimonials, .next-testimonials {}
+  .prev-gallery:hover, .next-gallery:hover, .prev-testimonials:hover, .next-testimonials:hover {}
+  .contact {}
+  .contact-left {}
+  .contact-left > p > a {}
+  .contact-right {}
+  .contact-right > p {}
+  .col-25 {
+    font-size: .85em;
+  }
+  .col-75 {}
+  input[type=text], [type=email], [type=tel], textarea {}
+  label {}
+  input[type=submit] {}
+  input[type=submit]:hover {}
+  .social {
+    padding: 8vw 1vw 0;
+  }
+  .social > a {
+    margin: auto;
+  }
+  .fa, .fab {}
+  .fa-instagram, .fa-facebook-f, .fa-envelope, .fa-phone-alt, .fa-youtube {}
+  .fa-instagram:hover, .fa-facebook-f:hover, .fa-envelope:hover, .fa-phone-alt:hover, .fa-youtube:hover {}
+  .contact::after {}
+  p.back-up {}
+  .far {}
+  .fa-hand-point-up {}
+  .fa-hand-point-up:hover {}
+  footer {}
+  .credit {}
+  .credit .label {
+    margin-left: 23%;
+  }
+  .credit a {
+    margin-right: 5%;
+  }
+}
