@@ -62,6 +62,7 @@
   }
   .gallery {
     margin: auto;
+    height: 250px;
   }
   .gallery-col-main {}
   .gallery-col-side {}
