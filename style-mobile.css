@@ -62,10 +62,16 @@
   }
   .gallery {
     margin: auto;
-    height: 200px;
+    height: 250px;
+    display: contents;
   }
-  .gallery-col-main {}
-  .gallery-col-side {}
+  .gallery-col-main {
+	  width: 100%;
+	  margin-bottom: 2%;
+	}
+  .gallery-col-side {
+	  width: 100%;
+	}
   .gallery-col-side-1 {}
   .gallery-col-side-2 {}
   .gallery-col-side-3 {}
@@ -73,7 +79,7 @@
   .overlay {}
   .modal {
     overflow-x: hidden;
-	  max-width: 100%;
+    max-width: 100%;
   }
   .modal-box {
     height: 90vw;
