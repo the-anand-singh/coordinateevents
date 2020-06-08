@@ -10,6 +10,7 @@ body {
   background-size: cover;
   font-family: muli;
 	max-width: 100%;
+	color: white;
 }
 /* Styling the Header tag*/
 header {
@@ -25,7 +26,7 @@ figure {
   margin: 0;
 }
 figure img {
-  filter: saturate(200%) contrast(200%) brightness(200%);
+  /*filter: saturate(200%) contrast(200%) brightness(200%);*/
 }
 /* Navigation Menu */
 nav {
@@ -127,19 +128,6 @@ a.menu:hover {
   max-height: 100%;
 	display: block;
 }
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:1;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
 .modal {
   display: none;
   position: fixed;
@@ -165,8 +153,8 @@ a.menu:hover {
   height: 100%;
 }
 .modal-box-center {
-  width: 70%;
-  height: 100%;
+  width: auto;
+  height: auto;
   box-sizing: border-box;
   align-content: center;	
 }
@@ -254,10 +242,11 @@ h4 {
 .column > p > a {
   float: left;
 }
-.column .fas {
-  font-size: 3em;
+.column p img {
+  height: 3em;
   color: #ffffff;
-  padding: 0em 0.5em 1.75em;
+  padding: 0em 0.5em 3.5em;
+	float: left;
 }
 .testimonial {
   display: flex;
@@ -311,6 +300,9 @@ h4 {
 .contact-left > p > a {
   text-decoration: none;
   color: #ffffff;
+}
+.contact-left iframe{
+	height: 330px;
 }
 /* RHS of Contact */
 .contact-right {
@@ -369,7 +361,6 @@ input[type=submit]:hover {
 }
 /* Social Media icons */
 .social {
-  float: none;
   margin: auto;
   display: flex;
   align-content: center;
@@ -446,4 +437,83 @@ footer {
   color: white;
   padding-left: 10px;
   margin-right: 40%;
+}
+.blog-body{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	background-color: transparent;
+}
+.blog-top{
+	height: 80px;
+}
+.blog{
+	width: 80%;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.blog-left{
+	height: 90%;
+	width: 20%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blog-left > video {
+	height: 95%;
+	width: 100%;
+}
+.blog-right{
+	height: 90%;
+	width: 75%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+.blog-right-heading{
+	text-align: center;
+}
+.blog-right-content{
+	height: 80%;
+	width: 60vw;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.blog-right-more{
+	height: 20%;
+	width: 100%;
+	
+}
+.blog-right-more > a{
+	text-decoration: none;
+	color: white;
+}
+.blog-footer{
+	height: auto;
+}
+.blog-social{
+	padding: 30px 0 10px 65%;
+}
+.blog-head{
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 8px;
+}
+.blog-writeup{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	text-align: justify;
 }

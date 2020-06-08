@@ -7,6 +7,7 @@
   body {
     box-sizing: border-box;
     max-width: 100%;
+    background-attachment: scroll;
   }
   header {
     position: relative;
@@ -62,19 +63,26 @@
   }
   .gallery {
     margin: auto;
-    height: 250px;
+    height: auto;
     display: contents;
   }
   .gallery-col-main {
-	  width: 100%;
-	  margin-bottom: 2%;
-	}
+    width: auto;
+    margin-bottom: 2%;
+    height: 250px;
+  }
   .gallery-col-side {
-	  width: 100%;
-	}
-  .gallery-col-side-1 {}
-  .gallery-col-side-2 {}
-  .gallery-col-side-3 {}
+    width: 100%;
+  }
+  .gallery-col-side-1 {
+    height: 250px;
+  }
+  .gallery-col-side-2 {
+    height: 250px;
+  }
+  .gallery-col-side-3 {
+    height: 250px;
+  }
   .gallery-col-main img, .gallery-col-side-1 img, .gallery-col-side-2 img, .gallery-col-side-3 img {}
   .overlay {}
   .modal {
@@ -82,7 +90,7 @@
     max-width: 100%;
   }
   .modal-box {
-    height: 90vw;
+    width: 100%;
     overflow-x: hidden;
   }
   .modal-box-left, .modal-box-right {}
@@ -122,6 +130,9 @@
   .contact {}
   .contact-left {}
   .contact-left > p > a {}
+  .contact-left iframe {
+    height: 330px;
+  }
   .contact-right {}
   .contact-right > p {}
   .col-25 {
@@ -146,12 +157,57 @@
   .far {}
   .fa-hand-point-up {}
   .fa-hand-point-up:hover {}
-  footer {}
+  footer {
+	  min-width: 100%;
+	}
   .credit {}
   .credit .label {
-    margin-left: 23%;
+    margin-left: 30%;
   }
   .credit a {
     margin-right: 5%;
   }
+  .blog-body {
+	  height: auto;
+	}
+  .blog-top {
+    height: 10px;
+  }
+  .blog {
+    height: 90vw;
+    flex-direction: column;
+    padding-bottom: 5vw;
+  }
+  .blog-left {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blog-left > video {
+    width: 90%;
+    height: 40vw;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+	.blog-left > img {
+		height: 20vw;
+	}
+  .blog-right {
+    height: 35vw;
+  }
+  .blog-right-content {
+    height: 80%;
+  }
+  .blog-right-more {
+    height: 20%;
+  }
+  .blog-right-more > a {}
+  .blog-footer {}
+  .blog-social {}
+  .blog-head {
+    margin-top: 20px;
+  }
+  .blog-writeup {}
 }

@@ -4,7 +4,9 @@
   html {
     overflow-x: hidden;
   }
-  body {}
+  body {
+    background-attachment: scroll;
+  }
   header {}
   figure {
     float: none;
@@ -41,14 +43,15 @@
     letter-spacing: .045em;
     font-size: 1em;
   }
-  .gallery {}
+  .gallery {
+    height: 300px;
+  }
   .gallery-col-main {}
   .gallery-col-side {}
   .gallery-col-side-1 {}
   .gallery-col-side-2 {}
   .gallery-col-side-3 {}
   .gallery-col-main img, .gallery-col-side-1 img, .gallery-col-side-2 img, .gallery-col-side-3 img {}
-  .overlay {}
   .modal {}
   .modal-box {
     width: 100%;
@@ -56,8 +59,7 @@
     margin-right: auto;
     margin-top: 32.5vw;
   }
-  .modal-box-left, .modal-box-right {
-  }
+  .modal-box-left, .modal-box-right {}
   .modal-box-center {
     width: 100%;
   }
@@ -89,8 +91,8 @@
     text-align: left;
   }
   .column > p > a {}
-  .column .fas {
-    padding: 0em 0.25em 3.5em;
+  .column > p > img {
+    padding: 0em 0.25em 4em;
   }
   .testimonial {}
   .testimonial-left, .testimonial-right {}
@@ -108,7 +110,7 @@
     width: 100%;
   }
   .contact-left iframe {
-    height: 35vw;
+    /*height: 35vw;*/
   }
   .contact-left > p > a {}
   .contact-right {
@@ -150,4 +152,21 @@
   .credit a {
     margin-right: 20%;
   }
+  .blog-body {}
+  .blog-top {
+    height: 110px;
+  }
+  .blog {}
+  .blog-left {}
+  .blog-left > video {}
+  .blog-right {}
+  .blog-right-content {}
+  .blog-right-more {}
+  .blog-right-more > a {}
+  .blog-footer {}
+  .blog-social {}
+  .blog-head {
+    margin-top: 20px;
+  }
+  .blog-writeup {}
 }
