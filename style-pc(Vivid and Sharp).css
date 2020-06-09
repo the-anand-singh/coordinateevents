@@ -9,8 +9,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: muli;
-	max-width: 100%;
-	color: white;
+  max-width: 100%;
+  color: white;
 }
 /* Styling the Header tag*/
 header {
@@ -25,14 +25,13 @@ figure {
   float: left;
   margin: 0;
 }
-figure img {
-  /*filter: saturate(200%) contrast(200%) brightness(200%);*/
-}
+figure img {}
 /* Navigation Menu */
 nav {
   float: right;
   padding: 0;
   padding-bottom: 1.5vw;
+  display: block;
 }
 /* Unordered List -- Menu */
 ul {
@@ -68,8 +67,7 @@ a.menu:hover {
   background-size: contain;
   box-sizing: content-box;
 }
-.hero img {
-}
+.hero img {}
 /* Descriptor Area Design */
 .desc {
   text-align: justify;
@@ -126,7 +124,7 @@ a.menu:hover {
   width: 100%;
   height: 100%;
   max-height: 100%;
-	display: block;
+  display: block;
 }
 .modal {
   display: none;
@@ -156,7 +154,7 @@ a.menu:hover {
   width: auto;
   height: auto;
   box-sizing: border-box;
-  align-content: center;	
+  align-content: center;
 }
 .close {
   color: #ffffff;
@@ -246,7 +244,7 @@ h4 {
   height: 3em;
   color: #ffffff;
   padding: 0em 0.5em 3.5em;
-	float: left;
+  float: left;
 }
 .testimonial {
   display: flex;
@@ -301,8 +299,8 @@ h4 {
   text-decoration: none;
   color: #ffffff;
 }
-.contact-left iframe{
-	height: 330px;
+.contact-left iframe {
+  height: 330px;
 }
 /* RHS of Contact */
 .contact-right {
@@ -438,82 +436,84 @@ footer {
   padding-left: 10px;
   margin-right: 40%;
 }
-.blog-body{
-	width: 100%;
-	height: 600px;
-	display: flex;
-	flex-direction: column;
-	background-color: transparent;
+.blog-body {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
-.blog-top{
-	height: 80px;
+.blog-top {
+  height: 80px;
 }
-.blog{
-	width: 80%;
-	height: 150px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: row;
+.blog {
+  width: 80%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 }
-.blog-left{
-	height: 90%;
-	width: 20%;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: auto;
-	margin-right: auto;
+.blog-left {
+  height: 90%;
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .blog-left > video {
-	height: 95%;
-	width: 100%;
+  height: 95%;
+  width: 100%;
 }
-.blog-right{
-	height: 90%;
-	width: 75%;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-direction: column;
+.blog-right {
+  height: 90%;
+  width: 75%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
-.blog-right-heading{
-	text-align: center;
+.blog-right-heading {
+  text-align: center;
 }
-.blog-right-content{
-	height: 80%;
-	width: 60vw;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+.blog-right-content {
+  height: 80%;
+  width: 60vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.blog-right-more{
-	height: 20%;
-	width: 100%;
-	
+.blog-right-more {
+  height: 20%;
+  width: 100%;
 }
-.blog-right-more > a{
-	text-decoration: none;
-	color: white;
+.blog-right-more > a {
+  text-decoration: none;
+  color: white;
 }
-.blog-footer{
-	height: auto;
+.blog-footer {
+  height: auto;
 }
-.blog-social{
-	padding: 30px 0 10px 65%;
+.blog-social {
+  padding: 30px 0 10px 65%;
 }
-.blog-head{
-	width: 55%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 8px;
+.blog-head {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
 }
-.blog-writeup{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	text-align: justify;
+.blog-writeup {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.icon {
+  display: none;
 }

@@ -12,21 +12,29 @@
   header {
     position: relative;
     max-width: 100%;
+    padding: 0px;
   }
   figure {
-    float: left;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    background-color: #2A1B3D;
-    margin: auto;
-    padding: 2vw;
+    padding-top: 0px;
   }
-  figure img {}
+  figure img {
+    padding-left: 60px;
+    padding-top: 25px;
+  }
+  .fa {
+    height: 10px;
+    color: white;
+    padding-top: 15px;
+  }
   nav {
     width: 100%;
     text-align: center;
     padding: 0;
-    float: left;
     display: none;
+    background-color: #d93f87;
   }
   ul {
     margin: auto;
@@ -34,8 +42,14 @@
   li {
     margin: auto;
     text-align: center;
-    padding: 0 5 0 0;
+    padding: 3vw 0;
   }
+  li:hover {
+    background-color: #ffffff;
+  }
+	li:hover a.menu{
+		color: #d93f87;
+	}
   ul li {
     float: none;
     text-align: center;
@@ -45,7 +59,11 @@
     padding: 0;
   }
   a.menu {}
-  a.menu:hover {}
+  a.menu:hover {
+    border-radius: 0px;
+    padding: 0;
+	  background-color: transparent;
+  }
   .placeholder {}
   .hero {
     height: 110vw;
@@ -158,8 +176,8 @@
   .fa-hand-point-up {}
   .fa-hand-point-up:hover {}
   footer {
-	  min-width: 100%;
-	}
+    min-width: 100%;
+  }
   .credit {}
   .credit .label {
     margin-left: 30%;
@@ -168,8 +186,8 @@
     margin-right: 5%;
   }
   .blog-body {
-	  height: auto;
-	}
+    height: auto;
+  }
   .blog-top {
     height: 10px;
   }
@@ -191,9 +209,9 @@
     margin-right: auto;
     margin-bottom: 0;
   }
-	.blog-left > img {
-		height: 20vw;
-	}
+  .blog-left > img {
+    height: 20vw;
+  }
   .blog-right {
     height: 35vw;
   }
@@ -210,4 +228,7 @@
     margin-top: 20px;
   }
   .blog-writeup {}
+  .icon {
+    display: block;
+  }
 }
