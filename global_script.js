@@ -90,3 +90,25 @@ function nextVideo() {
   currentVideoIndex += 1;
   document.getElementById("testimonials").src = videos[currentVideoIndex];
 }
+
+function form_check() {
+  var a = document.getElementById("name").value;
+  var b = document.getElementById("email").value;
+  var c = document.getElementById("phone").value;
+  var d = document.getElementById("message").value;
+  if (a == "" || a == null || b == "" || b == null || c == "" || c == null || d == "" || d == null) {
+    alert("All fields in the form should be filled!");
+  } else {
+    alert("Thank you for reaching out!");
+	  document.getElementById("contact_form").submit();
+	  document.getElementById("contact_form").reset();
+  }
+}
+
+function menu_openclose(){
+  if (document.getElementById("navigation").style.display === "block") {
+    document.getElementById("navigation").style.display = "none";
+  } else {
+    document.getElementById("navigation").style.display = "block";
+  }
+}
