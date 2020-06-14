@@ -91,7 +91,7 @@ function nextVideo() {
   document.getElementById("testimonials").src = videos[currentVideoIndex];
 }
 
-function form_check() {
+function formCheck() {
   var a = document.getElementById("name").value;
   var b = document.getElementById("email").value;
   var c = document.getElementById("phone").value;
@@ -99,13 +99,13 @@ function form_check() {
   if (a == "" || a == null || b == "" || b == null || c == "" || c == null || d == "" || d == null) {
     alert("All fields in the form should be filled!");
   } else {
+    document.getElementById("contact_form").submit();
+    document.getElementById("contact_form").reset();
     alert("Thank you for reaching out!");
-	  document.getElementById("contact_form").submit();
-	  document.getElementById("contact_form").reset();
   }
 }
 
-function menu_openclose(){
+function menu_openclose() {
   if (document.getElementById("navigation").style.display === "block") {
     document.getElementById("navigation").style.display = "none";
   } else {

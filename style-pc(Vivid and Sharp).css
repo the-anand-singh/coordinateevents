@@ -341,7 +341,7 @@ label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
-input[type=submit] {
+input[type=button] {
   background-color: #d93f87;
   color: white;
   padding: 12px 20px;
@@ -351,7 +351,7 @@ input[type=submit] {
   box-sizing: content-box;
   transition-duration: 0.3s;
 }
-input[type=submit]:hover {
+input[type=button]:hover {
   background-color: #ffffff;
   color: #d93f87;
   border: #ffffff solid thin;
