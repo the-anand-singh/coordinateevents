@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Adding Responsiveness - For Tab */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 932px) {
   html {
     overflow-x: hidden;
   }
@@ -22,6 +22,7 @@
     width: 100%;
     display: flex;
     align-content: center;
+	  flex-wrap: wrap;
   }
   ul {
     margin: auto;
@@ -30,6 +31,8 @@
     margin: auto;
     text-align: center;
     padding: 0 5px 0 0;
+    flex: 1;
+    flex-shrink: 1;
   }
   a.menu {}
   a.menu:hover {}
@@ -78,7 +81,9 @@
   .heading {}
   .row {}
   .column {
-    width: 47.92%;
+      flex: 48%;
+  -ms-flex: 48%;
+  max-width: 48%;
     height: 25vw;
     padding-left: 0;
     padding-right: 0.4em;
@@ -171,5 +176,5 @@
   .blog-writeup {}
 }
 .icon {
-	display: none;
+  display: none;
 }

@@ -1,4 +1,7 @@
 /* CSS Document */
+html{
+	scroll-behavior: smooth;
+}
 /* Remove gap between the content and the edges*/
 body {
   padding: 0;
@@ -25,12 +28,14 @@ figure {
   float: left;
   margin: 0;
 }
-figure img {}
+figure img {
+}
 /* Navigation Menu */
 nav {
   float: right;
   padding: 0;
-  padding-bottom: 1.5vw;
+  padding-bottom: 1vw;
+	margin-top: 0.5vw;
   display: block;
 }
 /* Unordered List -- Menu */
@@ -151,7 +156,7 @@ a.menu:hover {
   height: 100%;
 }
 .modal-box-center {
-  width: auto;
+  width: 70%;
   height: auto;
   box-sizing: border-box;
   align-content: center;
@@ -185,8 +190,6 @@ a.menu:hover {
 }
 /* Services */
 .services {
-  display: flex;
-  flex-direction: row;
   text-align: center;
   box-sizing: border-box;
   padding: 0vw 5vw 5vw;
@@ -201,22 +204,30 @@ a.menu:hover {
   line-height: 4em;
   color: #ffffff;
 }
-.row {}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction: row;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 /* Column division */
 .column {
   align-content: center;
-  float: left;
-  width: 29.7%;
+  flex: 32%;
+  -ms-flex: 32%;
+  max-width: 32%;
   height: 200px;
-  padding: 1em;
-  margin: 5px;
-  display: block;
-  overflow: hidden;
-  background-color: transparent;
+  padding: 0 4px;
   color: #ffffff;
 }
+.column:hover h4 {
+  color: rgba(217, 63, 135, 0.8);
+}
 .column:hover {
-  background-color: rgba(217, 63, 135, 0.8);
+  color: rgba(217, 63, 135, 0.8);
+  font-weight: bolder;
   cursor: pointer;
 }
 /* Clear floats after image containers */
@@ -243,8 +254,11 @@ h4 {
 .column p img {
   height: 3em;
   color: #ffffff;
-  padding: 0em 0.5em 3.5em;
+  padding: 0em 2.5em 3.5em 1.5em;
   float: left;
+}
+.pad {
+  height: 20px;
 }
 .testimonial {
   display: flex;
@@ -292,7 +306,7 @@ h4 {
 .contact-left {
   float: left;
   width: 50%;
-  min-height: 35vw;
+  min-height: 30vw;
   box-sizing: border-box;
 }
 .contact-left > p > a {
@@ -300,7 +314,7 @@ h4 {
   color: #ffffff;
 }
 .contact-left iframe {
-  height: 330px;
+  height: 205px;
 }
 /* RHS of Contact */
 .contact-right {
@@ -345,11 +359,13 @@ input[type=button] {
   background-color: #d93f87;
   color: white;
   padding: 12px 20px;
+  margin-left: 85%;
   border: #d93f87 solid thin;
   cursor: pointer;
   float: right;
   box-sizing: content-box;
   transition-duration: 0.3s;
+  border-radius: 15%;
 }
 input[type=button]:hover {
   background-color: #ffffff;
@@ -361,8 +377,9 @@ input[type=button]:hover {
 .social {
   margin: auto;
   display: flex;
-  align-content: center;
-  padding: 60px 0 0 30px;
+  align-content: flex-end;
+	justify-content: space-between;
+  padding: 60px 0 0 65%;
 }
 .social > a {
   margin: auto;
@@ -379,6 +396,8 @@ input[type=button]:hover {
   color: #d93f87;
   border: #d93f87 solid thin;
   background-color: transparent;
+  border-radius: 15%;
+  transition-duration: 0.7s;
 }
 .fa-instagram:hover, .fa-facebook-f:hover, .fa-envelope:hover, .fa-phone-alt:hover, .fa-youtube:hover {
   background-color: #d93f87;
@@ -402,12 +421,13 @@ p.back-up {
   text-decoration: none;
   margin: 2em 1em;
 }
-.fa-hand-point-up {
+.fa-hand-point-up, .fa-hand-point-left {
   color: #ffffff;
   border: #d93f87 solid thin;
   background-color: #d93f87;
+	transition-duration: 0.3s;
 }
-.fa-hand-point-up:hover {
+.fa-hand-point-up:hover, .fa-hand-point-left:hover {
   background-color: #ffffff;
   color: #d93f87;
   border: #ffffff solid thin;

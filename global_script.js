@@ -1,5 +1,9 @@
 /* Change Banner Images Automatically */
-var images_banner = ["images/2.jpeg", "images/3.jpeg", "images/4.jpeg", "images/5.jpeg", "images/6.jpeg"];
+var images_banner = ["images/Banner/2.jpeg", 
+					 "images/Banner/3.jpeg", 
+					 "images/Banner/4.jpeg", 
+					 "images/Banner/5.jpeg", 
+					 "images/Banner/6.jpeg"];
 
 function heroImage() {
   var i = 0;
@@ -19,7 +23,20 @@ function heroImage() {
 
 
 /* Gallery Section */
-var images_gallery = ["images/2.jpeg", "images/3.jpeg", "images/4.jpeg", "images/5.jpeg", "images/6.jpeg"];
+var images_gallery = ["images/Gallery/2cc2538f-9db0-4ed4-8cec-03b6e86592c4.JPG", 
+					  "images/Gallery/3bcd04d7-510a-408e-bee7-a675f7adcd18.JPG", 
+					  "images/Gallery/ARP_6797-01-02.jpeg", 
+					  "images/Gallery/ARP_6867-10-01-05-01.jpeg", 
+					  "images/Gallery/ARP_6980-01-01-01.jpeg", 
+					  "images/Gallery/ARP_8440.JPG", 
+					  "images/Gallery/ARP_8522.JPG", 
+					  "images/Gallery/ARP_9511.NEF", 
+					  "images/Gallery/ARP_9617.JPG", 
+					  "images/Gallery/d1bf4def-cbb8-42c7-b48d-26dbae6c7550.JPG", 
+					  "images/Gallery/FB_IMG_1588026530961-01.jpeg", 
+					  "images/Gallery/FB_IMG_1588026600347-01.jpeg", 
+					  "images/Gallery/FB_IMG_1588026909067.jpg", 
+					  "images/Gallery/IMG-2014.JPG"];
 var currentImageIndex = 0;
 
 function openModal() {
@@ -83,12 +100,12 @@ function checkTestimonialIndex() {
 
 function prevVideo() {
   currentVideoIndex -= 1;
-  document.getElementById("testimonials").src = videos[currentVideoIndex];
+  document.getElementById("testimonial").src = videos[currentVideoIndex];
 }
 
 function nextVideo() {
   currentVideoIndex += 1;
-  document.getElementById("testimonials").src = videos[currentVideoIndex];
+  document.getElementById("testimonial").src = videos[currentVideoIndex];
 }
 
 function formCheck() {

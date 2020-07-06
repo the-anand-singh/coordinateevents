@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Adding Responsiveness - For Phone */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   html {
     overflow-x: hidden;
   }
@@ -124,7 +124,9 @@
   .row {}
   .column {
     height: auto;
-    width: 100%;
+      flex: 100%;
+  -ms-flex: 100%;
+  max-width: 100%;
     box-sizing: content-box;
     padding-bottom: 0.5vw;
     margin: 0;
