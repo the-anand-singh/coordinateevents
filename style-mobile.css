@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Adding Responsiveness - For Phone */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
   html {
     overflow-x: hidden;
   }
@@ -20,9 +20,18 @@
     width: 100%;
     padding-top: 0px;
   }
+  figure a {}
+  .menu-logo {
+    flex: 1;
+  }
+  .logo-img {
+    flex: 9;
+    align-self: center;
+  }
   figure img {
-    padding-left: 60px;
     padding-top: 25px;
+    flex: 9;
+    justify-content: center;
   }
   figure .fa {
     height: 10px;
@@ -47,9 +56,9 @@
   li:hover {
     background-color: #ffffff;
   }
-	li:hover a.menu{
-		color: #d93f87;
-	}
+  li:hover a.menu {
+    color: #d93f87;
+  }
   ul li {
     float: none;
     text-align: center;
@@ -62,7 +71,7 @@
   a.menu:hover {
     border-radius: 0px;
     padding: 0;
-	  background-color: transparent;
+    background-color: transparent;
   }
   .placeholder {}
   .hero {
@@ -124,9 +133,9 @@
   .row {}
   .column {
     height: auto;
-      flex: 100%;
-  -ms-flex: 100%;
-  max-width: 100%;
+    flex: 100%;
+    -ms-flex: 100%;
+    max-width: 100%;
     box-sizing: content-box;
     padding-bottom: 0.5vw;
     margin: 0;

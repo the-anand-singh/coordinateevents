@@ -1,6 +1,6 @@
 /* CSS Document */
 /* Adding Responsiveness - For Tab */
-@media only screen and (max-width: 932px) {
+@media only screen and (max-width: 1020px) {
   html {
     overflow-x: hidden;
   }
@@ -22,7 +22,7 @@
     width: 100%;
     display: flex;
     align-content: center;
-	  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   ul {
     margin: auto;
@@ -81,9 +81,9 @@
   .heading {}
   .row {}
   .column {
-      flex: 48%;
-  -ms-flex: 48%;
-  max-width: 48%;
+    flex: 48%;
+    -ms-flex: 48%;
+    max-width: 48%;
     height: 25vw;
     padding-left: 0;
     padding-right: 0.4em;

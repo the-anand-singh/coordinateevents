@@ -1,6 +1,6 @@
 /* CSS Document */
-html{
-	scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 /* Remove gap between the content and the edges*/
 body {
@@ -28,14 +28,13 @@ figure {
   float: left;
   margin: 0;
 }
-figure img {
-}
+figure img {}
 /* Navigation Menu */
 nav {
   float: right;
   padding: 0;
   padding-bottom: 1vw;
-	margin-top: 0.5vw;
+  margin-top: 0.5vw;
   display: block;
 }
 /* Unordered List -- Menu */
@@ -340,7 +339,7 @@ h4 {
   margin-top: 6px;
   box-sizing: content-box;
 }
-input[type=text], [type=email], [type=tel], textarea {
+input[type=text], [type=email], [type=number], textarea {
   width: 100%;
   padding: 12px;
   resize: vertical;
@@ -351,11 +350,22 @@ input[type=text], [type=email], [type=tel], textarea {
   background-color: transparent;
   color: #ffffff;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
-input[type=button] {
+input[type=submit] {
   background-color: #d93f87;
   color: white;
   padding: 12px 20px;
@@ -367,7 +377,7 @@ input[type=button] {
   transition-duration: 0.3s;
   border-radius: 15%;
 }
-input[type=button]:hover {
+input[type=submit]:hover {
   background-color: #ffffff;
   color: #d93f87;
   border: #ffffff solid thin;
@@ -378,7 +388,7 @@ input[type=button]:hover {
   margin: auto;
   display: flex;
   align-content: flex-end;
-	justify-content: space-between;
+  justify-content: space-between;
   padding: 60px 0 0 65%;
 }
 .social > a {
@@ -414,20 +424,19 @@ p.back-up {
   text-align: right;
 }
 .far {
-  padding: 1em;
-  font-size: 1em;
+  padding: .2em .725em 0.2em 0.2em;
+  font-size: 2.5em;
   width: 15px;
   text-align: center;
   text-decoration: none;
   margin: 2em 1em;
-}
-.fa-hand-point-up, .fa-hand-point-left {
   color: #ffffff;
   border: #d93f87 solid thin;
   background-color: #d93f87;
-	transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-radius: 15%;
 }
-.fa-hand-point-up:hover, .fa-hand-point-left:hover {
+.far:hover {
   background-color: #ffffff;
   color: #d93f87;
   border: #ffffff solid thin;
@@ -464,7 +473,7 @@ footer {
   background-color: transparent;
 }
 .blog-top {
-  height: 80px;
+  height: 50px;
 }
 .blog {
   width: 80%;
@@ -522,10 +531,14 @@ footer {
   padding: 30px 0 10px 65%;
 }
 .blog-head {
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   margin-bottom: 8px;
+	
+}
+.blog-head video{
+	width: 100%;
+	height: 50vh;
+	margin-bottom: 80px;
 }
 .blog-writeup {
   width: 70%;
